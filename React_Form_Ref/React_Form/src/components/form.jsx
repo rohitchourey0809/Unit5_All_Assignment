@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { ShowData } from "./showdata"
 export const FORM = () => {
     const [formdata, setFormData] = useState({
         username: "",
@@ -52,61 +52,65 @@ export const FORM = () => {
         })
     };
     return (
-        <form onSubmit={handleSubmit}>
-            <input
-                onChange={handlechange}
-                // value={formdata.username}
-                id="username"
-                type="text"
-                placeholder="Enter Username"
-            />
+        <div>
+            <form onSubmit={handleSubmit}>
+                <input
+                    onChange={handlechange}
+                    // value={formdata.username}
+                    id="username"
+                    type="text"
+                    placeholder="Enter Username"
+                />
 
-            <br />
-            <input
-                onChange={handlechange}
-                // value={formdata.age}
+                <br />
+                <input
+                    onChange={handlechange}
+                    // value={formdata.age}
 
-                id="age"
-                type="number"
-                placeholder="Enter Age"
-            />
+                    id="age"
+                    type="number"
+                    placeholder="Enter Age"
+                />
 
-            <br />
-            <input
-                onChange={handlechange}
-                // value={formdata.age}
-                id="address"
-                type="text"
-                placeholder="Enter Address"
-            />
+                <br />
+                <input
+                    onChange={handlechange}
+                    // value={formdata.age}
+                    id="address"
+                    type="text"
+                    placeholder="Enter Address"
+                />
 
-            <br />
-            <select onChange={handlechange} id="depart">
-                <option>Department</option>
-                <option>software</option>
-                <option> Operation</option>
-            </select>
+                <br />
+                <select onChange={handlechange} id="depart">
+                    <option>Department</option>
+                    <option>software</option>
+                    <option> Operation</option>
+                </select>
 
-            <br />
-            <input
-                onChange={handlechange} id="salary" type="number" placeholder="Salary" />
+                <br />
+                <input
+                    onChange={handlechange} id="salary" type="number" placeholder="Salary" />
 
-            <br />
-            <div>
-                {" "}
-                <input onChange={handlechange} id="status" type="checkbox" value="Married" />
-                Married
-            </div>
+                <br />
+                <div>
 
-            <div>
-                <input onChange={handlechange} id="status" type="checkbox" value="UnMarried" />
-                Unmarried
-            </div>
+                    <input onChange={handlechange} id="status" type="checkbox" value="Married" />
+                    Married
+                </div>
 
-            <br />
-            <input
-                onChange={handlechange}
-                type="submit" value="submit" />
-        </form>
+                <div>
+                    <input onChange={handlechange} id="status" type="checkbox" value="UnMarried" />
+                    Unmarried
+                </div>
+
+                <br />
+                <input
+                    onChange={handlechange}
+                    type="submit" value="submit" />
+
+            </form>
+            <div><ShowData /></div>
+        </div>
     );
 };
