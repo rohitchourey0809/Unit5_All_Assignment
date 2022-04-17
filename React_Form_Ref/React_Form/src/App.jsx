@@ -1,16 +1,11 @@
-// import logo from './logo.svg';
+// import { useState } from "react";
+// import logo from './logo.svg'
 import "./App.css";
-// import { useState } from "react"
-import { FORM } from "./components/form";
+import { Todolist } from "./Components/Todo"
 function App() {
-  // const [counter,setcounter] = useState(50)
-
-  return (
-    <div className="App">
-      {/* <button>Button</button> */}
-      <FORM />
-    </div>
-  );
+  return <div className="App">
+    <Todolist />
+  </div>;
 }
 
 export default App;
