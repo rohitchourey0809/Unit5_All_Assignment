@@ -1,0 +1,22 @@
+{
+  "FORMDATA": [
+    {
+      "username": "GUGUG",
+      "age": "124",
+      "address": "SF",
+      "depart": "software",
+      "salary": "1241241",
+      "status": "Married",
+      "id": 1
+    },
+    {
+      "username": "rohit_fw15_206@masai.school",
+      "age": "7868773",
+      "address": "kjhj",
+      "depart": "",
+      "salary": "97689767",
+      "status": "Married",
+      "id": 2
+    }
+  ]
+}
