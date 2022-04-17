@@ -104,7 +104,9 @@ export const FORM = () => {
             </div>
 
             <br />
-            <input onChange={handlechange} type="submit" value="submit" />
+            <input
+                onChange={handlechange}
+                type="submit" value="submit" />
         </form>
     );
 };
