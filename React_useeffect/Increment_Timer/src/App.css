@@ -1,0 +1,134 @@
+.button {
+  --color: #{$color};
+  --hover: #{adjust-hue($color, 45deg)};
+}
+code {
+  color: #e4cb58;
+  font: inherit;
+}
+
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offsethover,
+.offset:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+.timer {
+  color: crimson;
+}
+.minutes {
+  color-interpolation-filters: linearRGB;
+  color: mediumseagreen;
+}
+/* <-----------------------------> */
+button {
+  color: var(--color);
+  transition: 0.25s;
+}
+
+button:hover,
+button:focus {
+  border-color: var(--hover);
+  color: goldenrod;
+}
+
+code {
+  color: #e4cb58;
+  font: inherit;
+}
+
+.Main-div {
+  /* border: 5px solid rgb(220, 200, 127); */
+  margin: 10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.main_div {
+  /* border: 5px solid rgb(16, 108, 44); */
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+/* <------------------------------------------> */
+.counterdiv:hover {
+  /* border: 2px solid #008000; */
+  margin: 10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.headcount {
+  background: #008000;
+  color: gold;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.pulse:hover,
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+}
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+button {
+  color: var(--color);
+  transition: 0.25s;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+.App {
+  text-align: center;
+  /* border: 2px solid red; */
+  margin: auto;
+  /* background-color: #282c34; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
