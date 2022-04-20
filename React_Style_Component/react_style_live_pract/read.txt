@@ -1,0 +1,7 @@
+    [App]----[navbar]
+     |
+     | 
+     [cart]---
+     | 
+     | 
+     [Button]

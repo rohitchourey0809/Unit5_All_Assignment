@@ -1,20 +1,19 @@
+import { createContext, useState } from "react";
+export const CartContext = createContext(); //?create Empty Box
 
-import { useEffect, useState } from "react"
-
-import { createContext } from "react"
-
-import {useState,useEffect } from "react"
-export const CartContext = createContext()
-
-//?Jsx
+//?Provider = Provdes the value
+//?Consumer = takes the value
 export const CartContextProvider = ({ children }) => {
-    const { cart, setCart } = useState(0)
+  //*Connect app to box
+  const [cart, setcart] = useState(0);
 
-    const handlechange = (inc) => {
-        setCart(cart + inc)
-    }
-    return <CartContext.Provider value={{ cart, handlechange
-}}>{children}
-        <App />
+  const handlechange = (inc) => {
+    setcart(cart + inc);
+  };
+  //>handlechange(1)
+  return (
+    <CartContext.Provider value={{ cart, handlechange }}>
+      {children}
     </CartContext.Provider>
-}
+  );
+};

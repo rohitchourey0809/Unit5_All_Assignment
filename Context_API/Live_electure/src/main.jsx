@@ -1,15 +1,18 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
 
 // impor
-// import { CartContextProvider } from "./Context/CartContext"
+import { CartContextProvider } from "./Context/CartContext";
+import { LangContextProvider } from "./Context/LanguageContext";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* <CartContextProvider> */}
-      <App />
-    {/* </CartContextProvider> */}
+    <LangContextProvider>
+      <CartContextProvider>
+        <App />
+      </CartContextProvider>
+    </LangContextProvider>
   </React.StrictMode>
-)
+);
