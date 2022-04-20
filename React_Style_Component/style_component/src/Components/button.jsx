@@ -15,4 +15,4 @@ margin:10px;
 }
 `
 
-
+export { Button };
