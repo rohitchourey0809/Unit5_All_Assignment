@@ -1,0 +1,7 @@
+step1 : create a component Home and about in src folder
+step2 : install npm i react-router
+step3 : import BrowserRouter in main.jsx and render the app
+step4 : GO TO App.js and import {Routes.route} from "react-router-dom" and give the path of each pages
+<Routes><Route></Route></Routes> 
+
+step5 : npm i axios and make userlink /user and useEffect
