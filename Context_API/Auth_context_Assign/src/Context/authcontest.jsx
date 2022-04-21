@@ -1,18 +1,12 @@
-//?Step1 init createContext c
-import {useContext} from "react"
+//?Step1 init createContext 
+import { createContext } from "react";
 
 //take a Empty bag
 
-// export const AuthContext = useContext()
+export const AuthContext = createContext();
 
 // //?Step2 rendering part
 
-// const AuthContextProvider = ({children}) =>{
-
-
-//     return (
-// < AuthContext.Provider>
-// {children}
-// </AuthContext.Provider>
-//     )
-// }
+export const AuthContextProvider = ({ children }) => {
+  return <AuthContext.Provider>{children}</AuthContext.Provider>;
+};
