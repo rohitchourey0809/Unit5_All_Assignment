@@ -15,7 +15,7 @@ export const USERLIST = () => {
     <div>
       {users.map((userdata) => (
         <p key={userdata.id}>
-          <Link to={`/users/${userdata.id}>`}>
+          <Link to={`/users/${userdata.id}`}>
             {" "}
             {userdata.id}::{userdata.first_name}
           </Link>
