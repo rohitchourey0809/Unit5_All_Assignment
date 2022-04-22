@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+//changes href == >  to
 export const NAVBAR = () => {
   const nav = [
     { title: "HOME", to: "/" },
@@ -6,11 +8,14 @@ export const NAVBAR = () => {
   ];
 
   return (
-    <div>
+    <div
+      className="navbardiv"
+      // style = "border: 1px solid red;"
+    >
       {nav.map((e, i) => (
-        <a key={i} href={e.to} style={{ margin: "10px" }}>
+        <Link key={i} to={e.to} style={{ margin: "10px" }}>
           {e.title}
-        </a>
+        </Link>
       ))}
     </div>
   );
