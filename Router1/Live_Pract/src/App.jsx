@@ -6,6 +6,7 @@ import { ABOUT } from "./Components/About";
 import { HOME } from "./Components/Home";
 import { NAVBAR } from "./Components/Navbar";
 import { USERLIST } from "./Components/userlist";
+import { Error } from "./Components/Error";
 function App() {
   // const [count, setCount] = useState(0)
 
@@ -18,6 +19,7 @@ function App() {
 
         <Route path="/about" element={<ABOUT />}></Route>
         <Route path="/users" element={<USERLIST />}></Route>
+        <Route element={<Error />}></Route>
       </Routes>
     </div>
   );
