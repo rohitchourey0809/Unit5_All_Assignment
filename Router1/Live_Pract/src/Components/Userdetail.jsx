@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect, useContext } from "react";
 import { useParams, Navigate } from "react-router-dom";
-import { AuthContext } from "../Contest/Authcontest";
+import { AuthContext } from "../Contexts/Authcontext";
 // import axios from "axios";
 export const Userdetail = () => {
   const { id } = useParams();
