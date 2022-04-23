@@ -16,7 +16,7 @@ export const LOGIN = () => {
           // ?! change  stae of ISAUTH. to TRUE
 
           handleAuth(true);
-          navigate("/");
+          navigate(-2, { replace: true });
         }}
       >
         Submit
