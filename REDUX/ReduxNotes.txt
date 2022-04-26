@@ -1,0 +1,21 @@
+//?https://www.youtube.com/watch?v=1oU_YGhT7ck
+
+Redux:-->
+Redux is used by ReactJS for building the user interface and to manage the application state.
+
+ Redux is React Redux which is used to read data from a Redux Store, and dispatch Actions to the Store to update data.
+
+
+REDUCER:
+
+Reducer is a pure function which is used to return a new state from the initial state. It reads the payloads from the actions. The reducer then updates the store via the state accordingly
+
+..NOTE: Redux is a library which is used for state management.
+
+
+
+//!Data flow from parent to child //? Unidirectional
+
+//? Prop Drilling function
+
+//?Solution <:= useContext
