@@ -1,0 +1,13 @@
+.child-div {
+  margin: 10px;
+  /* border: 1px solid red; */
+  background-image: url(https://th.bing.com/th/id/OIP.OKR4t8Xb43DfVi9QswhvzQHaHa?w=162&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7);
+}
+.main-div {
+  background-color: black;
+  text-align: center;
+}
+.TodoContainer {
+  border: 5px solid green;
+  margin: 10px;
+}
