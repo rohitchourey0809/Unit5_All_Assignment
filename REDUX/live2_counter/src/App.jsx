@@ -1,11 +1,11 @@
 // import { useState } from "react";
 
 import "./App.css";
-import { store } from "./Redux/store";
+// import { store } from "./Redux/store";
 
 function App() {
-  const state = store.getState();
-  console.log(state);
+  // const state = store.getState();
+  // console.log(state);
   //? counter:0
   return (
     <div className="App">

@@ -7,9 +7,12 @@ const ADD_COUNT = "ADD_COUNT";
 export const addcount = (data) => {
   return {
     type: ADD_COUNT,
-    payload: data,
+    payload: {
+      title: data,
+      date: date,
+      id: uuidV4(),
+    },
   };
 };
-addcount();
+// addcount();
 export default ADD_COUNT;
-
