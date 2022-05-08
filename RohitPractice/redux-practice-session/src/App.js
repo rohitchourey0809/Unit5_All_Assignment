@@ -1,19 +1,25 @@
 // import logo from './logo.svg';
 import "./App.css";
-import { CounterComponent } from "./components/CounterComponent";
-import { Signin } from "./components/Signincomponents";
-// import { Signin } from './components/Signincomponents';
+import { Usereducer } from "./USEREDUCER/Usereducer";
+// import {UseeffectApi} from "./useEffectApi/UseeffectApi";
+import { Useref } from "./UseReff/Useref";
+// import { CounterComponent } from "./components/CounterComponent";
+// import { Signin } from "./components/Signincomponents";
 
 function App() {
   return (
     <div className="App">
-      <div>
-        {" "}
-        <CounterComponent />
+      {/* <div> <CounterComponent /></div>
+      <div><Signin /></div> */}
+      {/* <div className="apidiv">
+       <UseeffectApi/>
+      </div> */}
+      <div className="useref">
+        <Useref />
       </div>
-      <div>
-        <Signin />
-      </div>
+     <div className="userducerdiv">
+       Usereducer<Usereducer/>
+     </div>
     </div>
   );
 }
