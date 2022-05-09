@@ -2,6 +2,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import Skeleton from "react-loading-skeleton";
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 export const Product = () => {
   const [data, setData] = useState([]);
@@ -51,10 +52,11 @@ export const Product = () => {
     });
     console.log("x");
     console.log(Updatedlist, "Updatedlist");
-    var z = setfilter(Updatedlist);
+    setfilter(Updatedlist);
     console.log("z", filter);
   };
 
+  // <------------------------------------------------->
   const ShowProducts = (products) => {
     return (
       <>
@@ -106,9 +108,12 @@ export const Product = () => {
                       {product.title.substring(0, 12)}"
                     </h5>
                     <p class="card-text fw-bold">"PRICE" ${product.price}</p>
-                    <a href="#" className="btn btn-outline-dark">
+                    <NavLink
+                      to={`product/${product.id}`}
+                      className="btn btn-outline-dark"
+                    >
                       BuyNow
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
               </div>
@@ -118,7 +123,7 @@ export const Product = () => {
       </>
     );
   };
-
+  // <------------------------------------------------->
   return (
     <div>
       <div className="container my-5 py-5">
